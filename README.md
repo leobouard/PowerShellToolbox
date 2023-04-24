@@ -31,6 +31,27 @@ About the buttons, you can modify:
 
 Keep in mind that `\` is the escape character for JSON, so in case you want to use it, you'll have to double it. For example: *C:\script\main.ps1* should be transform in *C:\\script\\main.ps1*.
 
+#### Example
+
+```json
+[
+    {
+        "tabName":  "PowerShell scripts",
+        "position":  1,
+        "columns":  3,
+        "rows":  3,
+        "buttons":  [
+            {
+                "title":  "Execute a cmdlet",
+                "icon":  "https://upload.wikimedia.org/wikipedia/commons/a/af/PowerShell_Core_6.0_icon.png",
+                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "action":  "Start-Sleep 1"
+            }
+        ]
+    }
+]
+```
+
 ### XAML files
 
 The final user interface is generated using three separate files:
