@@ -26,7 +26,7 @@ About the buttons, you can modify:
 
 - title: button main title, has to be unique in all the JSON file
 - icon: the path to the image to display, it can be an URL or a local file path
-- text: a short description of the action of the button
+- text: a short description of the action of the button, you can include `<LineBreak/>` to return to the line
 - action: the code to execute in PowerShell (will be interpreted using `Invoke-Expression`)
 
 Keep in mind that `\` is the escape character for JSON, so in case you want to use it, you'll have to double it. For example: *C:\script\main.ps1* should be transform in *C:\\script\\main.ps1*.
