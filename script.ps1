@@ -1,4 +1,4 @@
-param(
+﻿param(
     [string]$JsonFile = '.\data.json',
     [string]$MainTitle = 'PowerShell Toolbox',
     [int]$Height = 680,

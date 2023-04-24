@@ -1,4 +1,4 @@
-<Border CornerRadius="5" BorderThickness="1" BorderBrush="#DDD" Background="#FAFAFA" Margin="10" MinHeight="150" MinWidth="200" Grid.Column="{{gridColumn}}" Grid.Row="{{gridRow}}">
+﻿<Border CornerRadius="5" BorderThickness="1" BorderBrush="#DDD" Background="#FAFAFA" Margin="10" MinHeight="150" MinWidth="200" Grid.Column="{{gridColumn}}" Grid.Row="{{gridRow}}">
     <Button Name="{{name}}" BorderThickness="0" Background="Transparent" Padding="10px" VerticalAlignment="Stretch">
         <StackPanel>
             <Rectangle Width="32" Height="32" Margin="10">
