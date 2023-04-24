@@ -2,7 +2,7 @@
 
 A simple way to have your PowerShell scripts and utilities all in one place!
 
-![Demonstration](.\demo.webp)
+![Demonstration](demo.webp)
 
 Inspired by [dan-osull's PowerShell-Script-Menu-Gui](https://github.com/dan-osull/PowerShell-Script-Menu-Gui)
 
