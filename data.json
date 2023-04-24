@@ -1,0 +1,61 @@
+[
+    {
+        "tabName":  "PowerShell scripts",
+        "position":  1,
+        "columns":  3,
+        "rows":  3,
+        "buttons":  [
+            {
+                "title":  "Execute a cmdlet",
+                "icon":  "https://upload.wikimedia.org/wikipedia/commons/a/af/PowerShell_Core_6.0_icon.png",
+                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "action":  "Start-Sleep 1"
+            },
+            {
+                "title":  "Start a PowerShell script",
+                "icon":  "https://upload.wikimedia.org/wikipedia/commons/a/af/PowerShell_Core_6.0_icon.png",
+                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "action":  "& .\\script.ps1"
+            },
+            {
+                "title":  "Start CMD",
+                "icon":  "https://upload.wikimedia.org/wikipedia/commons/a/af/PowerShell_Core_6.0_icon.png",
+                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "action":  "Start-Process cmd.exe"
+            },
+            {
+                "title":  "Start a program",
+                "icon":  "https://upload.wikimedia.org/wikipedia/commons/a/af/PowerShell_Core_6.0_icon.png",
+                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "action":  "notepad.exe"
+            }
+        ]
+    },
+    {
+        "tabName":  "Administration consoles",
+        "position":  2,
+        "columns":  3,
+        "rows":  3,
+        "buttons":  [
+            {
+                "title":  "Azure Portal",
+                "icon":  "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b6/Microsoft-Azure.png/1024px-Microsoft-Azure.png",
+                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "action":  "Start-Process 'https://portal.azure.com/'"
+            },
+            {
+                "title":  "Microsoft 365 Admin Center",
+                "icon":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png",
+                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "action":  "Start-Process 'https://admin.microsoft.com/'"
+            },
+            {
+                "title":  "Exchange Online",
+                "icon":  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Microsoft_Exchange_%282019-present%29.svg/2346px-Microsoft_Exchange_%282019-present%29.svg.png",
+                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "action":  "Start-Process 'https://admin.exchange.microsoft.com/'"
+            }
+        ]
+    }
+] 
+ 
