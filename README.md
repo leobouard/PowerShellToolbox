@@ -14,7 +14,7 @@ The script is ready to go: if you want to try it, you'll just have to execute it
 
 By default, the script will use the `data.json` file. The best way to start using this script is to modify this file and customize it.
 
-In the default JSON file, you'll find two tabs (*PowerShell scripts* and *Administration consoles*). In the tab configuration you can modified:
+In the default JSON file, you'll find two tabs (*PowerShell scripts* and *Administration consoles*). In the tab configuration you can modify:
 
 - tabName: the title of the tab
 - position: in which order the tab will be displayed (from the smallest to the largest number)
