@@ -29,7 +29,7 @@ About the buttons, you can modify:
 - text: a short description of the action of the button
 - action: the code to execute in PowerShell (will be interpreted using `Invoke-Expression`)
 
-Keep in mind that `\` is the escape character for JSON, so in case you want to use it, you'll have to double it. For example: *C:\script\main.ps1* should be transform in *C:\\script\\main.ps1*.
+Keep in mind that `\` is the escape character for JSON, so in case you want to use it, you'll have to double it. For example: `C:\script\main.ps1` should be transform in `C:\\script\\main.ps1`.
 
 #### Example
 
