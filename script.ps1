@@ -1,5 +1,5 @@
 ﻿param(
-    [string]$JsonFile = '.\data.json',
+    [string]$JsonFile = "$PSScriptRoot\data\default.json",
     [string]$MainTitle = 'PowerShell Toolbox',
     [int]$Height = 680,
     [int]$Width = 1000,
@@ -9,8 +9,9 @@
 
 Import-Module .\module.psm1
 
+$parentFolder = $PSScriptRoot -replace '\\','/'
 $xml = Get-MainXaml -MainTitle $MainTitle -Height $Height -Width $Width -Resizable $Resizable.IsPresent
-$data = Get-Content -Path '.\data.json' -Encoding UTF8 | ConvertFrom-Json
+$data = (Get-Content -Path $JsonFile -Encoding UTF8) -replace '{{parentFolder}}',$parentFolder | ConvertFrom-Json
 $tabs = $data | Sort-Object -Property position | ForEach-Object {
     $tab = Get-TabXaml -TabName $_.tabName -Columns $_.columns -Rows $_.rows
     $id = 0
@@ -34,6 +35,6 @@ $Global:XmlWPF.SelectNodes("//*[@Name]") | ForEach-Object {
     Invoke-Expression -Command "`$$name.Add_Click({ $action })"
 }
 
-if (!$ShowConsole.IsPresent) { Hide-Console }
+if (!$ShowConsole.IsPresent) { $null = Hide-Console }
 
 $null = $Global:XamGUI.ShowDialog()

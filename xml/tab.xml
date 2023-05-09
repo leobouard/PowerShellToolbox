@@ -1,0 +1,11 @@
+﻿<TabItem Header="{{tabName}}" Padding="20px 10px">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            {{columnDefinition}}
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            {{rowDefinition}}
+        </Grid.RowDefinitions>
+        {{buttons}}
+    </Grid>
+</TabItem>

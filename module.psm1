@@ -6,7 +6,7 @@ function Get-MainXaml {
         [bool]$Resizable
     )
 
-    $xaml = Get-Content -Path '.\main.xml' -Encoding UTF8
+    $xaml = Get-Content -Path "$PSScriptRoot\xml\main.xml" -Encoding UTF8
     $xaml = $xaml -replace '{{mainTitle}}',$MainTitle
     $xaml = $xaml -replace '{{height}}',$Height
     $xaml = $xaml -replace '{{width}}',$Width
@@ -22,7 +22,7 @@ function Get-TabXaml {
         [int]$Rows = 1
     )
 
-    $xaml = Get-Content -Path '.\tab.xml' -Encoding UTF8
+    $xaml = Get-Content -Path "$PSScriptRoot\xml\tab.xml" -Encoding UTF8
     $xaml = $xaml -replace '{{tabName}}',$TabName
     $xaml = $xaml -replace '{{columnDefinition}}',('<ColumnDefinition/>'*$Columns)
     $xaml = $xaml -replace '{{rowDefinition}}',('<RowDefinition/>'*$Rows)
@@ -39,7 +39,7 @@ function Get-ButtonXaml {
         [string]$Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
     )
 
-    $xaml = Get-Content -Path '.\button.xml' -Encoding UTF8
+    $xaml = Get-Content -Path "$PSScriptRoot\xml\button.xml" -Encoding UTF8
     $xaml = $xaml -replace '{{gridColumn}}',$GridColumn
     $xaml = $xaml -replace '{{gridRow}}',$GridRow
     $xaml = $xaml -replace '{{icon}}',$Icon

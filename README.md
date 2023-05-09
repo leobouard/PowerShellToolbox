@@ -2,7 +2,7 @@
 
 A simple way to gather all your PowerShell scripts in a single interface without having to bother with XAML or WinForm! Inspired by [dan-osull's PowerShell-Script-Menu-Gui](https://github.com/dan-osull/PowerShell-Script-Menu-Gui)
 
-![Demonstration](demo.webp)
+![Demonstration](/data/demo.webp)
 
 ## How does this work?
 
