@@ -1,7 +1,7 @@
 ﻿<Border CornerRadius="5" BorderThickness="1" BorderBrush="#DDD" Background="#FAFAFA" Margin="10" MinHeight="150" MinWidth="200" Grid.Column="{{gridColumn}}" Grid.Row="{{gridRow}}">
     <Button Name="{{name}}" BorderThickness="0" Background="Transparent" Padding="5px" VerticalAlignment="Stretch">
         <StackPanel>
-            <Rectangle Width="50" Height="50" Margin="10">
+            <Rectangle Width="50" Height="50" Margin="5">
                 <Rectangle.Fill>
                     <ImageBrush ImageSource="{{icon}}"/>
                 </Rectangle.Fill>
