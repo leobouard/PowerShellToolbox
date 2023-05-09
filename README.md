@@ -12,7 +12,7 @@ The script is ready to go: if you want to try it, you'll just have to execute it
 
 ### JSON file
 
-By default, the script will use the `data.json` file. The best way to start using this script is to modify this file and customize it.
+By default, the script will use the `default.json` file. The best way to start using this script is to modify this file and customize it.
 
 In the default JSON file, you'll find two tabs (*PowerShell scripts* and *Administration consoles*). In the tab configuration you can modify:
 
@@ -25,7 +25,7 @@ In the default JSON file, you'll find two tabs (*PowerShell scripts* and *Admini
 About the buttons, you can modify:
 
 - title: button main title, has to be unique in all the JSON file
-- icon: the path to the image to display, it can be an URL or a local file path
+- icon: the path to the image to display, it can be an URL or a local file path. For relative file path, you must include the placeholder `{{parentFolder}}` instead of `$PSScriptRoot` or `.\`.
 - text: a short description of the action of the button
 - action: the code to execute in PowerShell (will be interpreted using `Invoke-Expression`)
 
