@@ -3,7 +3,8 @@
     [string]$MainTitle = 'PowerShell Toolbox',
     [int]$Height = 680,
     [int]$Width = 1000,
-    [switch]$Resizable
+    [switch]$Resizable,
+    [switch]$ShowConsole
 )
 
 Import-Module .\module.psm1
@@ -32,5 +33,7 @@ $Global:XmlWPF.SelectNodes("//*[@Name]") | ForEach-Object {
     $action = ($data.buttons | Where-Object {($_.title -replace ' ','') -eq $name}).action
     Invoke-Expression -Command "`$$name.Add_Click({ $action })"
 }
+
+if (!$ShowConsole.IsPresent) { Hide-Console }
 
 $null = $Global:XamGUI.ShowDialog()
