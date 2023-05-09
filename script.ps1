@@ -7,7 +7,7 @@
     [switch]$ShowConsole
 )
 
-Import-Module .\module.psm1
+Import-Module $PSScriptRoot\module.psm1
 
 $parentFolder = $PSScriptRoot -replace '\\','/'
 $xml = Get-MainXaml -MainTitle $MainTitle -Height $Height -Width $Width -Resizable $Resizable.IsPresent
