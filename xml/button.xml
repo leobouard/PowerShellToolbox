@@ -1,13 +1,15 @@
-﻿<Border CornerRadius="5" BorderThickness="1" BorderBrush="#DDD" Background="#FAFAFA" Margin="10" MinHeight="150" MinWidth="200" Grid.Column="{{gridColumn}}" Grid.Row="{{gridRow}}">
-    <Button Name="{{name}}" BorderThickness="0" Background="Transparent" Padding="5px" VerticalAlignment="Stretch">
-        <StackPanel>
-            <Rectangle Width="50" Height="50" Margin="5">
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="{{icon}}"/>
-                </Rectangle.Fill>
-            </Rectangle>
-            <Label Content="{{title}}" FontSize="16px" FontWeight="Bold"/>
-            <TextBlock Text="{{text}}" TextWrapping="Wrap" Margin="5px 0px"/>
-        </StackPanel>
+﻿<Border CornerRadius="5" BorderThickness="1" BorderBrush="#DDD" Background="#FAFAFA" Margin="10" Grid.Column="{{gridColumn}}" Grid.Row="{{gridRow}}">
+    <Button Name="{{name}}" BorderThickness="0" Background="Transparent" Padding="5px" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="70*"/>
+            </Grid.RowDefinitions>
+            <Image Source="{{icon}}" Grid.Row="0"/>
+            <StackPanel Grid.Row="1">
+                <Label Content="{{title}}" FontSize="16px" FontWeight="Bold"/>
+                <TextBlock Text="{{text}}" TextWrapping="Wrap" Margin="5px 0px"/>
+            </StackPanel>
+        </Grid>
     </Button>
 </Border>

@@ -36,8 +36,10 @@ function Get-ButtonXaml {
         [int]$GridRow,
         [string]$Icon,
         [string]$Title,
-        [string]$Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        [string]$Text
     )
+
+    if ($Icon -eq '') { $Icon = "$PSScriptRoot\assets\default.png" }
 
     $xaml = Get-Content -Path "$PSScriptRoot\xml\button.xml" -Encoding UTF8
     $xaml = $xaml -replace '{{gridColumn}}',$GridColumn
