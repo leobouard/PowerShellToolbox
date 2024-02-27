@@ -34,56 +34,68 @@
     {
         "tabName":  "Administration consoles",
         "position":  2,
-        "columns":  3,
+        "columns":  5,
         "rows":  3,
         "buttons":  [
             {
                 "title":  "Azure Portal",
                 "icon":  "{{parentFolder}}/assets/microsoft-azure.png",
-                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "text":  "There is so much stuff in here",
                 "action":  "Start-Process 'https://portal.azure.com/'"
             },
             {
                 "title":  "Microsoft 365 Admin Center",
                 "icon":  "{{parentFolder}}/assets/microsoft-365-admin-center.png",
-                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "text":  "Back to basic",
                 "action":  "Start-Process 'https://admin.microsoft.com/'"
             },
             {
-                "title":  "Microsoft 365 Defender",
-                "icon":  "{{parentFolder}}/assets/microsoft-defender.png",
-                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-                "action":  "Start-Process 'https://security.microsoft.com/'"
-            },
+				"title":  "Microsoft Entra",
+				"icon":  "{{parentFolder}}/assets/microsoft-entra.png",
+				"text":  "The new Azure AD thing you know",
+				"action":  "Start-Process 'https://entra.microsoft.com'"
+			},
             {
                 "title":  "Exchange Online",
                 "icon":  "{{parentFolder}}/assets/microsoft-exchange.png",
-                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "text":  "This one is a classic",
                 "action":  "Start-Process 'https://admin.exchange.microsoft.com/'"
             },
             {
-                "title":  "SharePoint Admin Center",
-                "icon":  "{{parentFolder}}/assets/microsoft-sharepoint.png",
-                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-                "action":  "Start-Process 'https://contoso-admin.sharepoint.com/'"
-            },
-            {
-                "title":  "Microsoft Teams Admin Center",
-                "icon":  "{{parentFolder}}/assets/microsoft-teams.png",
-                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-                "action":  "Start-Process 'https://admin.teams.microsoft.com/'"
-            },
-            {
-                "title":  "Power BI Admin Portal",
-                "icon":  "{{parentFolder}}/assets/microsoft-power-bi.png",
-                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-                "action":  "Start-Process 'https://app.powerbi.com/admin-portal/'"
-            },
-            {
-                "title":  "Microsoft Intune Admin Center",
+                "title":  "Intune Admin",
                 "icon":  "{{parentFolder}}/assets/microsoft-intune.png",
-                "text":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                "text":  "For the endpoint folks",
                 "action":  "Start-Process 'https://intune.microsoft.com/'"
+            },
+			{
+				"title":  "Teams Admin",
+				"icon":  "{{parentFolder}}/assets/microsoft-teams.png",
+				"text":  "For the collaborative folks",
+				"action":  "Start-Process 'https://admin.teams.microsoft.com/'"
+			},
+			{
+				"title":  "SharePoint Admin",
+				"icon":  "{{parentFolder}}/assets/microsoft-sharepoint.png",
+				"text":  "For those who likes to suffer",
+				"action":  "Start-Process 'https://contoso-admin.sharepoint.com/'"
+			},
+            {
+                "title":  "DSA",
+                "icon":  "{{parentFolder}}/assets/activedirectory.png",
+                "text":  "The true G.O.A.T",
+                "action":  "dsa"
+            },
+            {
+                "title":  "Config Manager",
+                "icon":  "{{parentFolder}}/assets/configmanager.png",
+                "text":  "SMS, SCCM, MECM, MCM or whatever you call it",
+                "action":  "Start-Process { C:/Program Files (x86)/Microsoft Endpoint Manager/AdminConsole/bin/Microsoft.ConfigurationManagement.exe }"
+            },
+            {
+                "title":  "Windows LAPS",
+                "icon":  "{{parentFolder}}/assets/laps.png",
+                "text":  "This one is useful",
+                "action":  "Start-Process { C:/Program Files/LAPS/AdmPwd.UI.exe }"
             }
         ]
     }
